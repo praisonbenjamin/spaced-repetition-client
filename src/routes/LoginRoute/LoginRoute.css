@@ -1,0 +1,29 @@
+.form-section {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+    align-items: center;
+}
+
+.form-box {
+    color: white;
+    width: 350px;
+    min-height: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #000000ab;;
+}
+
+.form-box p {
+    color: #ec760c;
+    font-weight: 500;
+    margin: 0;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .form-box {
+        width: 300px;
+        padding: 20px 0;
+    }
+}
