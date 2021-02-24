@@ -23,8 +23,8 @@ class RegistrationRoute extends Component {
           </p>
           <h2 className='register-header'>Sign up</h2>
           <div className='form-box'>
-          <RegistrationForm
-            onRegistrationSuccess={this.handleRegistrationSuccess}
+            <RegistrationForm
+              onRegistrationSuccess={this.handleRegistrationSuccess}
           />
         </div>
       </section>

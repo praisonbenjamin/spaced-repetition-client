@@ -1,13 +1,17 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Dashboard from '../../components/Dashboard/Dashboard';
+import { LanguageProvider } from '../../contexts/LangContext';
 
 class DashboardRoute extends Component {
   render() {
     return (
-      <section>
-        implement and style me
-      </section>
+      <LanguageProvider>
+        <section className="dashboard-section">
+          <Dashboard />
+        </section>
+      </LanguageProvider>
     );
   }
 }
 
-export default DashboardRoute
+export default DashboardRoute;
