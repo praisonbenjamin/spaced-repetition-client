@@ -6,7 +6,9 @@ import UserContext from '../../contexts/UserContext'
 import langApiService from '../../services/lang-service'
 import Button from '../Button/Button'
 
-import { WordList } from '../WordList/WordList';
+import { WordList } from '../WordList/WordList'
+
+import './Dashboard.css'
 
 
 export class Dashboard extends Component {
@@ -17,7 +19,7 @@ export class Dashboard extends Component {
         language: null
     }
 
-    componentDidCatch() {
+    componentDidMount() {
         langApiService
         .getLan()
         .then(data => {
@@ -29,25 +31,28 @@ export class Dashboard extends Component {
     render() {
 
         const { words } = this.context
+
+        console.log(this.context)
         return (
             <UserContext.Consumer>
                 { value => {
                     return (
                         <div>
                             <h2>{this.context.language.name}</h2>
-                            <p>Total Score: {this.context.language.total_score}</p>
+                            <p>Total correct answers: {this.context.language.total_score}</p>
 
+                            <section className='list-container'>
+                                <h3>Words to practice</h3>
+                                <ul className='word-list'>
+                                    {words.map((word, i) => (
+                                        <WordList key={i} word={word} />
+                                    ))}
+                                </ul>
 
-                            <h3>Words to practice</h3>
-                            <ul>
-                                {words.map((word, i) => (
-                                    <WordList key={i} word={word} />
-                                ))}
-                            </ul>
-
-                            <Link to='/learn'>
-                                <Button>Start practicing</Button>
-                            </Link>
+                                <Link to='/learn' className='dashboard-btn'>
+                                    <Button className='dashboard-btn'>Start practicing</Button>
+                                </Link>
+                            </section>
                         </div>
 
                     )
