@@ -4,7 +4,7 @@ ul {
   }
   
   .list-container {
-    background-color: #309dcf;
+    background-color: #000000ab;
     border-radius: 15px;
     display: inline-block;
     width: 90%;
@@ -12,9 +12,8 @@ ul {
     margin-bottom: 15px;
     padding-top: 15px;
     color: #e7e7e7;
-    box-shadow: 5px 5px rgba(34, 114, 151, 0.5), 10px 10px rgba(34, 114, 151, 0.4),
-      15px 15px rgba(34, 114, 151, 0.3), 20px 20px rgba(48, 157, 151, 0.2),
-      25px 25px rgba(48, 157, 151, 0.1);
+    box-shadow: 5px 5px rgba(22, 23, 24, 0.5), 10px 10px rgba(7, 13, 15, 0.4),
+      15px 15px rgba(34, 114, 151, 0.3)
   }
   
   .list-container h3 {
