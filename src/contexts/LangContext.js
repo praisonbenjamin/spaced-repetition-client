@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-const LangContext = React.createContext({
+const LanguageContext = React.createContext({
   language: {},
   words: [],
   head: null,
@@ -8,15 +8,15 @@ const LangContext = React.createContext({
   processNextWord: () => {},
   setError: () => {},
   clearError: () => {}
-});
+})
 
-export default LangContext;
+export default LanguageContext
 
 export class LanguageProvider extends Component {
   constructor(props) {
-    super(props);
-    const state = { language: {}, words: [], head: null };
-    this.state = state;
+    super(props)
+    const state = { language: {}, words: [], head: null }
+    this.state = state
   }
 
   componentDidMount() {}
@@ -24,21 +24,21 @@ export class LanguageProvider extends Component {
   componentWillUnmount() {}
 
   setError = error => {
-    console.error(error);
-    this.setState({ error });
-  };
+    console.error(error)
+    this.setState({ error })
+  }
 
   clearError = () => {
-    this.setState({ error: null });
-  };
+    this.setState({ error: null })
+  }
 
   processLanguage = language => {
-    this.setState({ language: language.language, words: language.words });
-  };
+    this.setState({ language: language.language, words: language.words })
+  }
 
   processNextWord = head => {
-    this.setState({ head: head });
-  };
+    this.setState({ head: head })
+  }
 
   render() {
     const value = {
@@ -51,12 +51,12 @@ export class LanguageProvider extends Component {
       processLanguage: this.processLanguage,
       processNextWord: this.processNextWord,
       processLogout: this.processLogout
-    };
+    }
     return (
-      <LangContext.Provider value={value}>
+      <LanguageContext.Provider value={value}>
         {this.props.children}
-      </LangContext.Provider>
-    );
+      </LanguageContext.Provider>
+    )
   }
 }
 

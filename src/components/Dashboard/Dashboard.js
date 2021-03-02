@@ -14,6 +14,8 @@ import './Dashboard.css'
 export class Dashboard extends Component {
     static contextType = LangContext
 
+    
+
     state = {
         error: null,
         language: null
@@ -32,7 +34,6 @@ export class Dashboard extends Component {
 
         const { words } = this.context
 
-        console.log(this.context)
         return (
             <UserContext.Consumer>
                 { value => {
