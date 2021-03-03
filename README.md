@@ -8,7 +8,7 @@ Spaced repetition is an evidence-based learning technique that is usually perfor
 
 ## Screenshot
 
-![screenshot of the app](https://github.com/praisonbenjamin/petful-client/blob/main/src/images/screenshot1.jpg)
+![screenshot of the app](https://github.com/praisonbenjamin/spaced-repetition-client/blob/main/images/screenshot1.jpg)
 
 
 
