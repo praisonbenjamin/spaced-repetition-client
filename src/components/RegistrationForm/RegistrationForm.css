@@ -11,23 +11,6 @@ section {
     margin-top: 30px;
   }
   
-  .form-footer {
-    margin-top: 40px;
-    display: flow-root;
-    text-align: -webkit-center;
-  }
-  
-  .footer-link {
-    text-decoration-line: none;
-    color: white;
-    display: inherit;
-    margin-top: 15px;
-  }
-  
-  .footer-link:hover {
-    color: rgba(255, 255, 255, 0.75);
-  }
-  
   @media screen and (max-width: 700px) {
     .registration-section {
       padding-left: 5px;
