@@ -1,5 +1,23 @@
 # Spaced Repetition Capstone
 
+View the live application at: https://spaced-repetition-eight-sigma.vercel.app/
+
+## Application summary
+
+Spaced repetition is an evidence-based learning technique that is usually performed with flashcards. Newly introduced and more difficult flashcards are shown more frequently, while older and less difficult flashcards are shown less frequently in order to exploit the psychological spacing effect. The use of spaced repetition has been proven to increase rate of learning. This App uses this concept to a digital form and helps you learn spanish. 
+
+## Screenshot
+
+![screenshot of the app](https://github.com/praisonbenjamin/petful-client/blob/main/src/images/screenshot1.jpg)
+
+
+
+## Technology used
+
+This application was built on React using the create-react-app boilerplate.
+
+Contact: Praison Benjamin at praisonbenjamin@gmail.com
+
 ## Setup
 
 To setup the application
