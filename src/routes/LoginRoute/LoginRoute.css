@@ -24,6 +24,10 @@
     margin: 0;
 }
 
+.alert p{
+    color: yellowgreen;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
     .form-box {
         width: 300px;

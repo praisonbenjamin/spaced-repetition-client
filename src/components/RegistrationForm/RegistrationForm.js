@@ -51,8 +51,8 @@ class RegistrationForm extends Component {
       <form
         onSubmit={this.handleSubmit}
       >
-        <div role='alert'>
-          {error && <p>{error}</p>}
+        <div role='alert' className='alert'>
+          {error && <p style={{color: 'yellow'}}>{error}</p>}
         </div>
         <div className='form-item'>
           <Label htmlFor='registration-name-input'>

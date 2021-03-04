@@ -5,6 +5,10 @@ section {
   .form-item {
     margin: 20px 0;
   }
+
+  .alert{
+    color: yellowgreen;
+  }
   
   @media screen and (max-width: 700px) {
     .login-section {

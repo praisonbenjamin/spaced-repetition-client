@@ -4,7 +4,7 @@ header {
   
   .navbar a {
     text-decoration: none;
-    color: white;
+    color: yellow;
     padding: 5px;
     line-height: 30px;
   }
@@ -37,7 +37,7 @@ header {
   
   .navbar {
     text-align: end;
-    background-color: #309dcf;
+    background-color: #010608;
     padding: 15px;
     height: 60px;
   }

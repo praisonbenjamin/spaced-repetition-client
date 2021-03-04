@@ -1,6 +1,7 @@
   
 section {
     text-align: center;
+    size: 20px;
   }
   
   .form-item {
@@ -9,6 +10,10 @@ section {
   
   .register-header {
     margin-top: 30px;
+  }
+
+  p{
+    color: yellowgreen;
   }
   
   @media screen and (max-width: 700px) {
@@ -32,3 +37,6 @@ section {
       margin-bottom: 20px;
     }
   }
+
+
+ 

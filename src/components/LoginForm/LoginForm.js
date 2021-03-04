@@ -3,6 +3,7 @@ import { Input, Label } from '../Form/Form'
 import AuthApiService from '../../services/auth-api-service'
 import UserContext from '../../contexts/UserContext'
 import Button from '../Button/Button'
+import './LoginForm'
 
 class LoginForm extends Component {
   static defaultProps = {
@@ -47,8 +48,8 @@ class LoginForm extends Component {
         className='LoginForm'
         onSubmit={this.handleSubmit}
       >
-        <div role='alert'>
-          {error && <p>{error}</p>}
+        <div role='alert' className='alert'>
+          {error && <p style={{color: 'yellow'}}>{error}</p>}
         </div>
         <div className='form-item'>
           <Label htmlFor='login-username-input'>
